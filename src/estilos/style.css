@@ -39,17 +39,26 @@ header {
     padding-right: 3em;
 }
 
+.menu-lista a { text-decoration: none; }
+
 .menu-item {
     color: gray;
     font-size: 1.1em;
     list-style-type: none;
     padding-left: .5em;
     cursor: pointer;
+    transition: all .5s;
 }
 
-.menu-item:nth-child(1)::after,
-.menu-item:nth-child(2)::after {
-    content: "  |";
+.menu-item:hover {
+    color: var(--verde-escuro);
+}
+
+.barra {
+    width: 0.2em;
+    height: 1.5em;
+    background-color: #8080805c;
+    margin-left: 0.5em;
 }
 
 .icone-login i {
@@ -72,6 +81,12 @@ header {
     color: var(--branco);
     font-weight: 400;
     font-size: 4em;
+}
+
+.subtitulo {
+    color: var(--branco);
+    font-weight: 400;
+    font-size: 3em;
 }
 
 footer {
