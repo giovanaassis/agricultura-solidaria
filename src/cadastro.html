@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agricultura Solidária</title>
     <link rel="stylesheet" href="estilos/style.css">
-    <link rel="stylesheet" href="estilos/suporte.css">
-    <link rel="stylesheet" href="estilos/inicio.css">
+    <link rel="stylesheet" href="estilos/cadastro.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -30,41 +29,27 @@
             </ul>
         </nav>
         <div class="icone-login">
-            <a href="cadastro.html"><i class="fa-solid fa-user"></i></a>
+            <i class="fa-solid fa-user"><a href="cadastro.html"></a></i>
         </div>
     </header>
 
-    <main class="suporte">
-        <div class="titulos-container">
-            <h1 class="titulo">Dúvidas?</h1>
-        </div>
-
-        <section class="principal-container">
-            <div class="principal-conteudo">
-                <p>
-                    É possível entrar em contato conosco através de Whatsapp, E-mail e Redes Sociais. Confira as informações abaixo:
-                </p>
-                <div class="contatos">
-                    <div class="contato-whats">
-                        <i class="fa-brands fa-whatsapp"></i>
-                        <span>(21) 98623-2757</span>
-                    </div>
-                    <div class="contato-email">
-                        <i class="fa-regular fa-envelope"></i>
-                        <span>giovana_2011_11@hotmail.com</span>
-                    </div>
-                    <div class="contato-insta">
-                        <i class="fa-brands fa-instagram"></i>
-                        <span>gigi_assis14</span>
-                    </div>
-                </div>
+    <main class="cadastro">
+        <form action="#" class="formulario">
+            <h2>Criar conta</h2>
+            <div class="input-container">
+                <label for="usu-nome">Nome:</label>
+                <input type="text" name="usu-nome" id="usu-nome">
             </div>
-            <div class="principal-imagem">
-                <img src="img/morangos-bg.jpeg" alt="Morangos">
+            <div class="input-container">
+                <label for="usu-email">E-mail:</label>
+                <input type="email" name="usu-email" id="usu-email">
             </div>
-        </section>
+            <div class="input-container">
+                <label for="usu-senha">Senha:</label>
+                <input type="password" name="usu-senha" id="usu-senha">
+            </div>
+        </form>
     </main>
-
     <footer>
         <p>&copy; Agricultura Solidária 2024</p>
     </footer>
