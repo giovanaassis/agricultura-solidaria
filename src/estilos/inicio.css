@@ -1,34 +1,34 @@
-.sobre-nos {
+.principal-container {
     width: 100%;
     height: 100%;
     display: flex;
 }
 
-.sobre-nos-conteudo {
+.principal-conteudo {
     width: 50%;
     padding: 2em;
 }
 
-.sobre-nos-conteudo h3 {
+.principal-conteudo h3 {
     color: var(--verde-claro);
     font-size: 1.4em;
     padding-bottom: .5em;
 }
 
-.sobre-nos-conteudo p {
+.principal-conteudo p {
     padding-bottom: 3em;
     line-height: 1.8em;
 }
 
-.sobre-nos-conteudo ol > li {
+.principal-conteudo ol > li {
     list-style-position: inside;
 }
 
-.sobre-nos-imagem {
+.principal-imagem {
     width: 50%;
 }
 
-.sobre-nos-imagem img {
+.principal-imagem img {
     width: 100%;
     height: 100%;
 }

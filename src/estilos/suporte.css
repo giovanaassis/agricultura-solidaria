@@ -1,0 +1,12 @@
+.contatos i {
+    font-size: 1.5em;
+    padding-right: 1em;
+    padding-bottom: 2em;
+}
+
+.contatos span {
+    background-color: rgba(204, 204, 204, 0.637);
+    padding: .5em;
+    border-radius: 1em;
+    user-select: none;
+}
