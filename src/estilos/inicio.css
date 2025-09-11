@@ -13,10 +13,11 @@
     color: var(--verde-claro);
     font-size: 1.4em;
     padding-bottom: .5em;
+    padding-top: 2rem;
 }
 
 .principal-conteudo p {
-    padding-bottom: 3em;
+    padding-bottom: 1.5em;
     line-height: 1.8em;
 }
 
@@ -45,4 +46,18 @@
 
 .actived-link li {
     color: #053B06;
+}
+
+@media screen and (max-width: 880px) {
+    .principal-imagem {
+        display: none;
+    }
+
+    .principal-container {
+        justify-content: center;
+    }
+
+    .principal-conteudo {
+        width: 80%;
+    }
 }
