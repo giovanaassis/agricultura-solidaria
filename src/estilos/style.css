@@ -72,13 +72,40 @@ header {
 }
 
 .icone-login i {
+    position: relative;
     color: black;
     background-color: var(--verde-claro);
     border-radius: 50%;
     padding: .9em;
     font-size: 1em;
     cursor: pointer;
+    z-index: 1;
 }
+
+.perfil {
+    position: absolute;
+    right: 20px;
+    top: 80px;
+    background-color: rgb(180, 233, 180);
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    opacity: 0;
+    transition: all .2s ease-out;
+}
+
+.perfil ul {
+    width: 100%;
+    height: 100%;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.2em;
+}
+
+.perfil li { cursor: pointer; }
 
 .titulos-container {
     background: linear-gradient(45deg, #51A629 55%, #053B06);
