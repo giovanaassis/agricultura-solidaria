@@ -38,6 +38,8 @@ header {
     height: 6em;
 }
 
+h2 { text-transform: capitalize; }
+
 .logo {
     width: 8em;
 }
@@ -106,6 +108,9 @@ header {
 }
 
 .perfil li { cursor: pointer; }
+.perfil li:hover {
+    color: var(--verde-escuro);
+}
 
 .titulos-container {
     background: linear-gradient(45deg, #51A629 55%, #053B06);
