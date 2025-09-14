@@ -5,6 +5,7 @@
 :root {
     --verde-claro: #51A629;
     --verde-escuro: #053B06;
+    --cinza-claro: rgba(202, 202, 202, 0.822);
     --branco: #F7FFF7;
 }
 
@@ -108,8 +109,13 @@ h2 { text-transform: capitalize; }
 }
 
 .perfil li { cursor: pointer; }
-.perfil li:hover {
+.perfil a:hover {
     color: var(--verde-escuro);
+}
+
+.perfil a {
+    color: black;
+    text-decoration: none;
 }
 
 .titulos-container {

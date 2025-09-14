@@ -41,7 +41,15 @@
         </ul>
       </nav>
       <div class="icone-login">
-        <a href="login.html"><i class="fa-solid fa-user"></i></a>
+        <a><i class="fa-solid fa-user"></i></a>
+        <div class="perfil">
+          <ul>
+            <li><a href="alimentos.html">Seus alimentos</a></li>
+            <li>Suas doações</li>
+            <li>Doar</li>
+            <li>Sair</li>
+          </ul>
+        </div>
       </div>
     </header>
 
@@ -62,9 +70,14 @@
       </div>
     </main>
     <footer>
-      <p>&copy; Agricultura Solidária 2024</p>
+      <p>&copy; Agricultura Solidária 2025</p>
     </footer>
 
-    <script type="module" src="js/confirm.js"></script>
+    <script type="module">
+      import { mostrarPerfilMenu } from "./js/mostrarPerfilMenu.js"
+
+      mostrarPerfilMenu();
+      localStorage.removeItem("produtoSelecionado");
+    </script>
   </body>
 </html>
