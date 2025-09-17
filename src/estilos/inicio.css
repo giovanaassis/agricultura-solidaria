@@ -44,10 +44,6 @@
     font-weight: 600;
 }
 
-.actived-link li {
-    color: #053B06;
-}
-
 @media screen and (max-width: 880px) {
     .principal-imagem {
         display: none;

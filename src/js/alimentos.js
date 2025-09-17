@@ -1,13 +1,9 @@
-import { mostrarPerfilMenu } from "./mostrarPerfilMenu.js";
-
 const usu_alimentos_container = document.querySelector(".usu-alimentos");
 const usu_alimentos_lista = [
   { nome: "Banana", qts: 5, status: "Entregue", unidade_medida: "kilo" },
   { nome: "Banana", qts: 5, status: "Cancelado", unidade_medida: "kilo" },
   { nome: "Banana", qts: 5, status: "Pendente", unidade_medida: "kilo" },
 ];
-
-mostrarPerfilMenu();
 
 for (let i in usu_alimentos_lista) {
   const { nome, qts, status, unidade_medida } = usu_alimentos_lista[i];

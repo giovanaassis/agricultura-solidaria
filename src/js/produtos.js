@@ -1,5 +1,4 @@
 import { formatarData } from "./formatarData.js";
-import { mostrarPerfilMenu } from "./mostrarPerfilMenu.js";
 
 const produtos_container = document.querySelector(".produtos-container");
 const produtos = [
@@ -28,8 +27,6 @@ const produtos = [
     validade: "011025",
   },
 ];
-
-mostrarPerfilMenu();
 
 const selecionarProduto = (produto) => {
   localStorage.setItem("produtoSelecionado", JSON.stringify(produto));
