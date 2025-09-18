@@ -19,7 +19,7 @@ header.innerHTML = `
       <ul>
         <li><a href="alimentos.html">Seus alimentos</a></li>
         <li><a href="doacoes.html">Suas doações</a></li>
-        <li>Doar</li>
+        <li><a href="doar.html">Doar</a></li>
         <li>Sair</li>
       </ul>
     </div>

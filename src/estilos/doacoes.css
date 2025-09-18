@@ -38,3 +38,36 @@ h2 {
   line-height: 1.5em;
   font-size: 13px;
 }
+
+.doacao-formulario div {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin-block: 40px;
+  font-size: 1.2em;
+  gap: 20px;
+}
+
+.doacao-formulario input,
+select {
+  font-size: 1em;
+  padding: 5px;
+}
+
+.doacao-formulario button {
+  background-color: var(--verde-claro);
+  font-size: 1.5em;
+  padding: 10px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.doacao-formulario button:hover {
+  opacity: 90%;
+}
+
+.doacao-formulario > button > a {
+  color: var(--branco);
+  text-decoration: none;
+}
