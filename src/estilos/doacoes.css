@@ -71,3 +71,34 @@ select {
   color: var(--branco);
   text-decoration: none;
 }
+
+.usu-doacoes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-block: 3em;
+}
+
+.usu-doacoes-card {
+  position: relative;
+  width: 250px;
+  border: 1px solid lightgray;
+  box-shadow: 2px -1px 5px 1px rgba(0, 0, 0, 0.137);
+  padding: 10px;
+}
+
+.usu-doacoes-card h3 {
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+.usu-doacoes-card span {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  font-size: 1.5em;
+}
+
+.usu-doacoes-card hr {
+  margin-block: 15px;
+}

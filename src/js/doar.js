@@ -35,6 +35,6 @@ select.addEventListener("change", () => {
 // quando enviar o formulario
 submit_btn.addEventListener("click", (e) => {
   e.preventDefault();
-  alert("Doação enviada!");
+  alert("Doação enviada! Agradecemos pela contribuição!");
   window.location.href = "doacoes.html";
 });
