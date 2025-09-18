@@ -49,6 +49,7 @@ h2 {
 .menu-lista {
   display: flex;
   padding-right: 3em;
+  transition: all .5s;
 }
 
 .menu-lista a {
@@ -98,7 +99,7 @@ h2 {
   width: 200px;
   height: 200px;
   border-radius: 10px;
-  opacity: 0;
+  display: none;
   transition: all 0.2s ease-out;
 }
 
@@ -149,4 +150,42 @@ footer {
   color: var(--branco);
   text-align: center;
   padding: 1em;
+}
+
+.active-menu { left: 0 !important; }
+
+.toggle-menu { display: none; }
+
+@media (max-width: 768px) {
+  header {
+    position: relative;
+    padding: 20px;
+  }
+
+  .logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .toggle-menu {
+    display: block;
+    border: none;
+    font-size: 2em;
+    font-weight: 600;
+    color: var(--verde-claro);
+    z-index: 99;
+  }
+
+  .menu-lista {
+    position: absolute;
+    left: -200px;
+    top: 0;
+    flex-direction: column;
+    background-color: var(--branco);
+    padding-top: 130px;
+    padding-bottom: 50px;
+    padding-left: 10px;
+    font-size: 1.2em;
+  }
 }

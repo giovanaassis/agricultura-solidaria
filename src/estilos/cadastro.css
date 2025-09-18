@@ -104,3 +104,13 @@
   color: #053b06;
   text-decoration: none;
 }
+
+@media screen and (max-width: 800px) {
+  .formulario {
+    width: 90%;
+  }
+
+  .input-container {
+    width: 100%;
+  }
+}

@@ -4,13 +4,13 @@ export const mostrarPerfilMenu = () => {
   const perfil_menu = document.querySelector(".perfil");
 
   icone_login.addEventListener("click", () => {
-    perfil_menu.style.opacity = 1;
+    perfil_menu.style.display = "block";
   });
 
   // se clicar fora, desaparece o menu
   document.addEventListener("click", (e) => {
     if (!icone_login_container.contains(e.target)) {
-      perfil_menu.style.opacity = 0;
+      perfil_menu.style.display = "none";
     }
   });
 };

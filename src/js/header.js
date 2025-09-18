@@ -4,6 +4,7 @@ const header = document.querySelector("header");
 
 header.innerHTML = `
   <img src="img/logotipo.png" alt="Logo do Projeto" class="logo" />
+  <button class="toggle-menu">☰</button>
   <nav>
     <ul class="menu-lista">
       <li class="menu-item"><a href="index.html">Início</a></li>
@@ -34,8 +35,21 @@ if (links.length === 0) alert("não tem links");
 
 const currentPage = window.location.pathname.split("/").pop();
 
-links.forEach(link => {
-  if(link.getAttribute("href") === currentPage) {
+links.forEach((link) => {
+  if (link.getAttribute("href") === currentPage) {
     link.classList.add("actived-link");
+  }
+});
+
+const toggle_menu = document.querySelector(".toggle-menu");
+const menu = document.querySelector(".menu-lista");
+
+toggle_menu.addEventListener("click", () => {
+  menu.classList.toggle("active-menu");
+
+  if (menu.classList.contains("active-menu")) {
+    toggle_menu.textContent = "X";
+  } else {
+    toggle_menu.textContent = "☰";
   }
 });

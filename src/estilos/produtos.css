@@ -112,3 +112,9 @@
 .checkmark i {
   padding-right: 10px;
 }
+
+@media screen and (max-width: 800px) {
+  .itens-confirm img {
+    width: 80%;
+  }
+}
